@@ -9,7 +9,7 @@ class BSGRoundRobinArbGenerator(Generator):
     def run(self):
         channels = self.config.get('channels', 16)
         
-        args = ['python', 'bsg_round_robin_arb/bsg_round_robin_arb.py', str(channels)]
+        args = ['python', 'bsg_round_robin_arb.py', str(channels)]
         
         cwd = self.files_root
         f=open("bsg_round_robin_arb.v","w")
